@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apna Dhaaba</title>
+    <link rel="stylesheet" href="1style.css" />
+    <meta name="viewport" content="width=720">
+  </head>
+  <style>
+    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #FFDEE9;
+background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%); 
+}
+
+.main{
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+ .container{
+    height: 100%;
+    width: 100%;
+    overflow-x:none ;
+    
+
+    
+ }   
+.navcontainer{
+    width: 100vw;
+    /* background-color: rgb(169, 130, 205); */
+    background-color: #0093E9;
+background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+nav{
+    width: 100%;
+    overflow-wrap:none;
+    padding: 2rem;
+}
+#navlist1{
+    width: 100%;
+    /* margin-left: 15px; */
+    padding: 15px;
+    list-style: none;
+    font-size: 2.0rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#navlogo{
+    font-size: 2.1rem;
+    color:white ;
+}
+a{
+    text-decoration: none;
+    color: rgb(78, 70, 70);
+
+}
+#navitems{
+    display: flex;
+    gap: 40px;
+}
+.footerbox{
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    color: azure;
+    font-size: medium;
+    text-align: center;
+    min-height: 30px;
+}
+.footerbox p{
+    color: azure;
+    font-size: 20px;
+}
+.contentbox{
+    width: 70%;
+    margin: auto;
+    border: 1px solid black;
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 3rem;
+    box-shadow: 0px 0px 35px black ;
+}
+
+.contentbox h1{
+    font-size: 45px;
+    color: crimson;
+}
+
+.item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.rightbox{
+    padding-top: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s linear 0s;
+    /* box-shadow: 5px 5px 5px rgb(0, 0, 0); */
+    /* border-radius: 25px; */
+
+    
+}
+.rightbox img {
+    border: 1px solid black;
+    height: 200px;
+    width: 300px;
+    border-radius:25px;
+}
+.rightbox:hover{
+    transform: scale(1.1);
+    transition: all 0.6s linear 0s;
+}
+.rightbox .overlay{
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(92, 87, 87, 0.54);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3 linear 0s;
+}
+.rightbox:hover .overlay{
+    opacity : 1;
+} 
+.rightbox .overlay .span{
+    color: white;
+    font-size: 1.2rem;
+}
+.leftbox{
+    display:flex ;
+    flex-direction: column;
+    gap: 20px;
+}
+.leftbox h2{
+    font-size:2rem;
+}
+.ingredients{
+    font-size: 1rem;
+}
+
+  </style>
+  <body>
+    <header>
+      <div class="container">
+        <div class="navcontainer">
+          <nav>
+            <ul id="navlist1">
+              <li><p id="navlogo">Apna Dhaba</p></li>
+              <li>
+                <div id="navitems">
+                  <a href="#">Home</a>
+                  <a href="#">Contact</a>
+                  <a href="#">About</a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="contentbox">
+        <!-- Item 1 -->
+        <section>
+          <div class="item">
+            <div class="leftbox">
+              <!-- heading -->
+              <h1>Gulab Jamun</h1>
+              <div>
+                <h2>Ingredients</h2>
+                <ul id="ingredients">
+                  <li>Sugar</li>
+                  <li>Bread</li>
+                  <li>Oil</li>
+                </ul>
+              </div>
+              <div>
+                <!-- Recipe -->
+                <h2>Recipe</h2>
+                <ol class="recipebox">
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Modi, nihil.
+                  </li>
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </li>
+                  <li>Lorem ipsum dolor sit amet consectetur.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                </ol>
+              </div>
+            </div>
+            <div class="rightbox">
+                <img src="https://github.com/user-attachments/assets/5ffdddde-4457-4fac-9740-f271aed9a971" alt="gulabjamun">
+                <div class="overlay">
+                    <span>Click Here to Order</span>
+                </div>
+            </div>
+          </div>
+        </section>
+        <hr>
+        <!-- Item 2 -->
+        <section>
+            <div class="item">
+              <div class="leftbox">
+                <!-- heading -->
+                <h1>Barfi</h1>
+                <div>
+                  <h2>Ingredients</h2>
+                  <ul id="ingredients">
+                    <li>Sugar</li>
+                    <li>Bread</li>
+                    <li>Oil</li>
+                  </ul>
+                </div>
+                <div>
+                  <h2>Recipe</h2>
+                  <ol class="recipebox">
+                    <li>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Modi, nihil.
+                    </li>
+                    <li>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </li>
+                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                  </ol>
+                </div>
+              </div>
+              <div class="rightbox">
+                <img src="https://github.com/user-attachments/assets/bd7b84ef-7e4c-4810-a248-fbac93b9ca74" alt="barfi">
+                <div class="overlay">
+                    <span>Click Here to Order</span>
+                </div>
+              </div>
+            </div>
+          </section>
+          <hr>
+           <!-- Item 3 -->
+        <section>
+            <div class="item">
+              <div class="leftbox">
+                <!-- heading -->
+                <h1>Gulab Jamun</h1>
+                <div>
+                  <h2>Ingredients</h2>
+                  <ul id="ingredients">
+                    <li>Sugar</li>
+                    <li>Bread</li>
+                    <li>Oil</li>
+                  </ul>
+                </div>
+                <div>
+                  <!-- Recipe -->
+                  <h2>Recipe</h2>
+                  <ol class="recipebox">
+                    <li>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Modi, nihil.
+                    </li>
+                    <li>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </li>
+                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                  </ol>
+                </div>
+              </div>
+              <div class="rightbox">
+                  <img src="https://github.com/user-attachments/assets/5ffdddde-4457-4fac-9740-f271aed9a971" alt="gulabjamun">
+                  <div class="overlay">
+                      <span>Click Here to Order</span>
+                  </div>
+              </div>
+            </div>
+          </section>
+          <hr>
+          <!-- Item 4 -->
+          <section>
+              <div class="item">
+                <div class="leftbox">
+                  <!-- heading -->
+                  <h1>Barfi</h1>
+                  <div>
+                    <h2>Ingredients</h2>
+                    <ul id="ingredients">
+                      <li>Sugar</li>
+                      <li>Bread</li>
+                      <li>Oil</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h2>Recipe</h2>
+                    <ol class="recipebox">
+                      <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Modi, nihil.
+                      </li>
+                      <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </li>
+                      <li>Lorem ipsum dolor sit amet consectetur.</li>
+                      <li>Lorem ipsum dolor sit amet.</li>
+                    </ol>
+                  </div>
+                </div>
+                <div class="rightbox">
+                  <img src="https://github.com/user-attachments/assets/bd7b84ef-7e4c-4810-a248-fbac93b9ca74" alt="barfi">
+                  <div class="overlay">
+                      <span>Click Here to Order</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+        
+      </div>
+    </main>
+
+    <footer>
+      <div class="footerbox">
+        <p>Copyright &copy; Apna Dhaaba Pvt Ltd 2023 All Rights Reserved</p>
+      </div>
+    </footer>
+  </body>
+</html>
